@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Lab 4</title>
+
+        <script>
+            var a = new XMLHttpRequest()
+            var b = new XMLHttpRequest()
+            var c = new XMLHttpRequest()
+            var d = new XMLHttpRequest()
+            var e = new XMLHttpRequest()
+            var f = new XMLHttpRequest()
+            var g = new XMLHttpRequest()
+            var h = new XMLHttpRequest()
+            var i = new XMLHttpRequest()
+            var j = new XMLHttpRequest()
+
+            a.open("GET", "1.txt", true)
+            b.open("GET", "2.txt", true)
+            c.open("GET", "3.txt", true)
+            d.open("GET", "4.txt", true)
+            e.open("GET", "5.txt", true)
+            f.open("GET", "6.txt", true)
+            g.open("GET", "7.txt", true)
+            h.open("GET", "8.txt", true)
+            i.open("GET", "9.txt", true)
+            j.open("GET", "10.txt", true)
+            
+            a.onreadystatechange=processData
+            b.onreadystatechange=processData
+            c.onreadystatechange=processData
+            d.onreadystatechange=processData
+            e.onreadystatechange=processData
+            f.onreadystatechange=processData
+            g.onreadystatechange=processData
+            h.onreadystatechange=processData
+            i.onreadystatechange=processData
+            j.onreadystatechange=processData
+
+            a.send(null)
+            b.send(null)
+            c.send(null)
+            d.send(null)
+            e.send(null)
+            f.send(null)
+            g.send(null)
+            h.send(null)
+            i.send(null)
+            j.send(null)
+
+            function processData()
+            {
+                if(a.readyState == 4 && b.readyState == 4 && c.readyState == 4 && d.readyState == 4 && e.readyState == 4 && f.readyState == 4 && g.readyState == 4 && h.readyState == 4 && i.readyState == 4 && j.readyState == 4)
+                {
+
+                    setTimeout(function())
+                    var p1 = document.createElement("p")
+                    p1.innerHTML = a.responseText
+                    document.body.appendChild(p1)
+
+                    var p2 = document.createElement("p")
+                    p2.innerHTML = b.responseText
+                    document.body.appendChild(p2)
+
+                    var p3 = document.createElement("p")
+                    p3.innerHTML = c.responseText
+                    document.body.appendChild(p3)
+                    
+                    var p4 = document.createElement("p")
+                    p4.innerHTML = d.responseText
+                    document.body.appendChild(p4)
+
+                    var p5 = document.createElement("p")
+                    p5.innerHTML = e.responseText
+                    document.body.appendChild(p5)
+
+                    var p6 = document.createElement("p")
+                    p6.innerHTML = f.responseText
+                    document.body.appendChild(p6)
+
+                    var p7 = document.createElement("p")
+                    p7.innerHTML = g.responseText
+                    document.body.appendChild(p7)
+
+                    var p8 = document.createElement("p")
+                    p8.innerHTML = h.responseText
+                    document.body.appendChild(p8)
+
+                    var p9 = document.createElement("p")
+                    p9.innerHTML = i.responseText
+                    document.body.appendChild(p9)
+
+                    var p10 = document.createElement("p")
+                    p10.innerHTML = j.responseText
+                    document.body.appendChild(p10)
+                }
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
